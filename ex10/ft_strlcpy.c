@@ -6,12 +6,9 @@
 /*   By: unix_user <unix_user@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 00:33:59 by unix_user         #+#    #+#             */
-/*   Updated: 2022/03/26 17:35:49 by unix_user        ###   ########.fr       */
+/*   Updated: 2022/03/27 00:34:05 by unix_user        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// #include <bsd/string.h>
-// #include <stdio.h>
 
 unsigned int	ft_strlen(char *str)
 {
@@ -32,7 +29,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	src_len = ft_strlen(src);
 	if (src_len >= size)
 	{
-		while (i <= size - 2)
+		while (i < size - 1)
 		{
 			dest[i] = src[i];
 			i++;
@@ -41,7 +38,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	}
 	else
 	{
-		while (i <= src_len)
+		while (i < src_len)
 		{
 			dest[i] = src[i];
 			i++;
@@ -50,9 +47,12 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	return (src_len);
 }
 
+// #include <bsd/string.h>
+// #include <stdio.h>
+
 // int	main(void)
 // {
-// 	char			str1[6];
+// 	char			str1[] = "ABCDEF";
 // 	unsigned int	j;
 // 	long			i;
 // 	unsigned int	n;
@@ -67,7 +67,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 // 	printf("n=%d str=%s return=%ld\n", n, str1, i);
 // 	j = ft_strlcpy(str1, "12345", n);
 // 	printf("n=%d str=%s return=%d\n", n, str1, j);
-// 	n = 7;
+// 	n = 10;
 // 	i = strlcpy(str1, "12345", n);
 // 	printf("n=%d str=%s return=%ld\n", n, str1, i);
 // 	j = ft_strlcpy(str1, "12345", n);
