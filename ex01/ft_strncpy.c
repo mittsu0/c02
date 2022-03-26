@@ -6,11 +6,12 @@
 /*   By: unix_user <unix_user@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 00:33:59 by unix_user         #+#    #+#             */
-/*   Updated: 2022/03/26 16:42:05 by unix_user        ###   ########.fr       */
+/*   Updated: 2022/03/26 17:17:59 by unix_user        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
+// #include <string.h>
 
 unsigned int	ft_strlen(char *str)
 {
@@ -51,18 +52,18 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	return (dest);
 }
 
-int	main(void)
-{
-	char	str1[7];
-	char	str2[4];
+// int	main(void)
+// {
+// 	char	str1[7];
+// 	char	str2[4];
+// 	char	str1_cp[7];
+// 	char	str2_cp[4];
 
-	ft_strncpy(str1, "ABCDEF", 7);
-	ft_strncpy(str2, "123", 4);
-	ft_strncpy(str1, str2, 3);
-	printf("%s\n", str1);
-	ft_strncpy(str1, "ABCDEF", 7);
-	ft_strncpy(str2, "123", 4);
-	ft_strncpy(str1, str2, 7);
-	printf("%s\n", str1);
-	return (0);
-}
+// 	printf("%s\n", ft_strncpy(str1, "ABCDEF", 7));
+// 	printf("%s\n", strncpy(str1_cp, "ABCDEF", 7));
+// 	printf("%s\n", ft_strncpy(str2, "123", 4));
+// 	printf("%s\n", strncpy(str2_cp, "123", 4));
+// 	printf("%s\n", ft_strncpy(str1, str2, 3));
+// 	printf("%s\n", strncpy(str1_cp, str2_cp, 3));
+// 	return (0);
+// }

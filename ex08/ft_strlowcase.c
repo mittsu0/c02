@@ -6,11 +6,11 @@
 /*   By: unix_user <unix_user@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 00:33:59 by unix_user         #+#    #+#             */
-/*   Updated: 2022/03/26 16:40:25 by unix_user        ###   ########.fr       */
+/*   Updated: 2022/03/26 17:29:04 by unix_user        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 
 char	*ft_strlowcase(char *str)
 {
@@ -51,15 +51,15 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-int	main(void)
-{
-	char	str1[7];
+// int	main(void)
+// {
+// 	char	str1[7];
 
-	ft_strcpy(str1, "aBcD");
-	printf("%s\n", str1);
-	printf("%s\n", ft_strlowcase(str1));
-	ft_strcpy(str1, "YZ[@A");
-	printf("%s\n", str1);
-	printf("%s\n", ft_strlowcase(str1));
-	return (0);
-}
+// 	ft_strcpy(str1, "aBcD");
+// 	printf("%s\n", str1);
+// 	printf("%s\n", ft_strlowcase(str1));
+// 	ft_strcpy(str1, "A[B@C");
+// 	printf("%s\n", str1);
+// 	printf("%s\n", ft_strlowcase(str1));
+// 	return (0);
+// }

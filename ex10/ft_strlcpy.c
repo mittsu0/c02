@@ -6,12 +6,12 @@
 /*   By: unix_user <unix_user@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 00:33:59 by unix_user         #+#    #+#             */
-/*   Updated: 2022/03/26 16:44:39 by unix_user        ###   ########.fr       */
+/*   Updated: 2022/03/26 17:35:49 by unix_user        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <bsd/string.h>
-#include <stdio.h>
+// #include <bsd/string.h>
+// #include <stdio.h>
 
 unsigned int	ft_strlen(char *str)
 {
@@ -50,26 +50,26 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	return (src_len);
 }
 
-int	main(void)
-{
-	char			str1[6];
-	unsigned int	j;
-	long			i;
-	unsigned int	n;
+// int	main(void)
+// {
+// 	char			str1[6];
+// 	unsigned int	j;
+// 	long			i;
+// 	unsigned int	n;
 
-	n = 5;
-	i = strlcpy(str1, "12345", n);
-	printf("n=%d str=%s return=%ld\n", n, str1, i);
-	j = ft_strlcpy(str1, "12345", n);
-	printf("n=%d str=%s return=%d\n", n, str1, j);
-	n = 6;
-	i = strlcpy(str1, "12345", n);
-	printf("n=%d str=%s return=%ld\n", n, str1, i);
-	j = ft_strlcpy(str1, "12345", n);
-	printf("n=%d str=%s return=%d\n", n, str1, j);
-	n = 7;
-	i = strlcpy(str1, "12345", n);
-	printf("n=%d str=%s return=%ld\n", n, str1, i);
-	j = ft_strlcpy(str1, "12345", n);
-	printf("n=%d str=%s return=%d\n", n, str1, j);
-}
+// 	n = 5;
+// 	i = strlcpy(str1, "12345", n);
+// 	printf("n=%d str=%s return=%ld\n", n, str1, i);
+// 	j = ft_strlcpy(str1, "12345", n);
+// 	printf("n=%d str=%s return=%d\n", n, str1, j);
+// 	n = 6;
+// 	i = strlcpy(str1, "12345", n);
+// 	printf("n=%d str=%s return=%ld\n", n, str1, i);
+// 	j = ft_strlcpy(str1, "12345", n);
+// 	printf("n=%d str=%s return=%d\n", n, str1, j);
+// 	n = 7;
+// 	i = strlcpy(str1, "12345", n);
+// 	printf("n=%d str=%s return=%ld\n", n, str1, i);
+// 	j = ft_strlcpy(str1, "12345", n);
+// 	printf("n=%d str=%s return=%d\n", n, str1, j);
+// }

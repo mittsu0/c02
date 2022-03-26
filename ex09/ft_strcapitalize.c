@@ -6,11 +6,11 @@
 /*   By: unix_user <unix_user@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 00:33:59 by unix_user         #+#    #+#             */
-/*   Updated: 2022/03/26 15:01:24 by unix_user        ###   ########.fr       */
+/*   Updated: 2022/03/26 17:31:29 by unix_user        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 
 int	ft_str_isnot_alpha_or_numeric(char *c)
 {
@@ -66,37 +66,38 @@ char	*ft_strcapitalize(char *str)
 	return (str);
 }
 
-int	ft_strlen(char *str)
-{
-	int	i;
+// int	ft_strlen(char *str)
+// {
+// 	int	i;
 
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
-}
+// 	i = 0;
+// 	while (str[i])
+// 		i++;
+// 	return (i);
+// }
 
-char	*ft_strcpy(char *dest, char *src)
-{
-	int	i;
+// char	*ft_strcpy(char *dest, char *src)
+// {
+// 	int	i;
 
-	i = 0;
-	while (i <= ft_strlen(src))
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	return (dest);
-}
+// 	i = 0;
+// 	while (i <= ft_strlen(src))
+// 	{
+// 		dest[i] = src[i];
+// 		i++;
+// 	}
+// 	return (dest);
+// }
 
-int	main(void)
-{
-	char	str1[47];
+// int	main(void)
+// {
+// 	char	str1[50];
 
-	ft_strcpy(str1, "salut, comment tu vas ? 42mots quarante-deux; ");
-	printf("%s\n", str1);
-	printf("%s\n", ft_strcapitalize(str1));
-	return (0);
-}
+// 	ft_strcpy(str1, "salut, comment tu vas ? 42mots quarante-deux; ");
+// 	printf("%s\n", str1);
+// 	printf("%s\n", ft_strcapitalize(str1));
+// 	ft_strcpy(str1, " cinquante+et+un");
+// 	printf("%s\n", str1);
+// 	printf("%s\n", ft_strcapitalize(str1));
+// 	return (0);
+// }

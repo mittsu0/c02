@@ -6,11 +6,11 @@
 /*   By: unix_user <unix_user@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 00:33:59 by unix_user         #+#    #+#             */
-/*   Updated: 2022/03/26 00:47:15 by unix_user        ###   ########.fr       */
+/*   Updated: 2022/03/26 17:19:46 by unix_user        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 
 int	ft_str_is_alpha(char *str)
 {
@@ -34,12 +34,12 @@ int	ft_str_is_alpha(char *str)
 	return (1);
 }
 
-int	main(void)
-{
-	printf("%d\n", ft_str_is_alpha(""));
-	printf("%d\n", ft_str_is_alpha("AB"));
-	printf("%d\n", ft_str_is_alpha("ab"));
-	printf("%d\n", ft_str_is_alpha("Ab"));
-	printf("%d\n", ft_str_is_alpha("[`"));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%d\n", ft_str_is_alpha(""));
+// 	printf("%d\n", ft_str_is_alpha("AZ"));
+// 	printf("%d\n", ft_str_is_alpha("az"));
+// 	printf("%d\n", ft_str_is_alpha("12aZ"));
+// 	printf("%d\n", ft_str_is_alpha("[`"));
+// 	return (0);
+// }

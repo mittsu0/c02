@@ -6,11 +6,11 @@
 /*   By: unix_user <unix_user@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 00:33:59 by unix_user         #+#    #+#             */
-/*   Updated: 2022/03/26 13:29:45 by unix_user        ###   ########.fr       */
+/*   Updated: 2022/03/26 17:27:55 by unix_user        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 
 char	*ft_strupcase(char *str)
 {
@@ -22,9 +22,7 @@ char	*ft_strupcase(char *str)
 	while (str[i])
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
-		{
 			str[i] = str[i] - diff;
-		}
 		i++;
 	}
 	return (str);
@@ -36,9 +34,7 @@ int	ft_strlen(char *str)
 
 	i = 0;
 	while (str[i])
-	{
 		i++;
-	}
 	return (i);
 }
 
@@ -55,15 +51,15 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-int	main(void)
-{
-	char	str1[7];
+// int	main(void)
+// {
+// 	char	str1[7];
 
-	ft_strcpy(str1, "aBcD");
-	printf("%s\n", str1);
-	printf("%s\n", ft_strupcase(str1));
-	ft_strcpy(str1, "yz[@A");
-	printf("%s\n", str1);
-	printf("%s\n", ft_strupcase(str1));
-	return (0);
-}
+// 	ft_strcpy(str1, "aBcD");
+// 	printf("%s\n", str1);
+// 	printf("%s\n", ft_strupcase(str1));
+// 	ft_strcpy(str1, "a1b@c");
+// 	printf("%s\n", str1);
+// 	printf("%s\n", ft_strupcase(str1));
+// 	return (0);
+// }
